@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Login Modal</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap"
+			rel="stylesheet" />
+	</head>
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						primary: "#FF6363",
+						secondary: {
+							100: "#E2E2D5",
+							200: "#888883",
+						},
+					},
+					fontFamily: {
+						body: ["Poppins","sans"],
+					},
+				},
+			},
+		};
+	</script>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<!-- Container  -->
+		<div class="flex items-center justify-center min-h-screen p-8 bg-cyan-50 min-w-screen">
+			<div class="text-gray-500 grid max-w-4xl grid-cols-1 grid-rows-[10rem, 1fr] md:grid-rows-1 md:grid-cols-[20rem,1fr] bg-white rounded-md md:grid-rows-1 md:grid-cols-[10rem, 1fr] overflow-hidden container shadow-xl">
+				<img class="object-cover w-full h-full" src="../assets/workstation.webp"/>
+				<div class="p-4">
+					<h1 class="mb-4 text-3xl font-bold text-cyan-900">Log In</h1>
+					<p class="text-gray-500">Log in to your account to upload or download pictures, videos or music</p>
+					<form>
+						<input type="text" class="w-full py-3 my-4 border border-gray-300 rounded-md outline-none text-cyan-700 px-7 focus:ring focus:ring-cyan-100 focus:border-cyan-300" placeholder="Enter your email address">
+					</form>
+					<div class="flex flex-col items-center justify-center sm:space-x-8 sm:flex-row mb-7">
+						<a href="#" class="flex-1 order-2 mt-4 sm:order-1 text-cyan-700 hover:underline">Forgot Password?</a>
+						<button class="flex-1 order-1 w-full px-2 py-4 text-white border rounded-md sm:order-2 bg-cyan-700">Next</button>
+					</div>
+					<hr>
+					<p class="py-3 text-center">Or log in with</p>
+					<div class="flex flex-col space-y-3 sm:space-y-0 sm:flex-row sm:space-x-3">
+						<button class="flex items-center justify-center flex-1 p-3 text-center border rounded-md text-cyan-800 border-cyan-500">
+							<img class="w-5 h-5 mr-3" src="../assets/facebook.png" alt="facebook Icon">
+							Facebook
+						</button>
+						<button class="flex items-center justify-center flex-1 p-3 text-center border rounded-md text-cyan-800 border-cyan-500">
+							<img class="w-5 h-5 mr-3" src="../assets/google.png" alt="google Icon">
+							Google
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
